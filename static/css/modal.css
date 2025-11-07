@@ -1,0 +1,72 @@
+/* Modal background */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+/* Hidden by default */
+.modal.hidden {
+  display: none;
+}
+
+/* Modal box */
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 30vw;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content p {
+    font-size: 1.5rem;
+}
+
+.modal-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.modal-content div label {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.modal-content div select {
+    font-size: 1.2rem;
+}
+
+.modal-content div input {
+    padding: 0.2rem;
+    font-size: 1rem;
+    width: 20%;
+}
+
+.modal-content button {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 80%;
+  border-radius: 8px;
+}

@@ -1,0 +1,124 @@
+.categories-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.categories-label {
+    border-bottom: solid 1px;
+}
+
+.categories-label h2 {
+    text-align: baseline;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.categories {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.categories div {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.categories div:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+.categories i {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.categories p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Change in main-section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.discovery-page {    
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.discovery-title {
+    border-bottom: solid 1px;
+}
+
+.discovery-title h2 {
+    text-align: baseline;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.product-container {
+    padding-top: 2rem;
+}
+
+/* Tablet screens (1024px and below) */
+@media (max-width: 1024px) {
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+}
+
+/* Mobile landscape (768px and below) */
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+    }
+
+    .categories i {
+        font-size: 1.6rem;
+    }
+
+    .categories p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile portrait (480px and below) */
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .categories i {
+        font-size: 1.4rem;
+    }
+
+    .categories p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Ultra-small screens (360px and below) */
+@media (max-width: 360px) {
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+}

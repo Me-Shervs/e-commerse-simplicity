@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart | Simplicity</title>
+    <link rel="icon" href="../static/uploads/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/cart.css"/>
+    <link rel="stylesheet" href="../static/css/modal.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+    <div class="header-image-div">
+        <img src="../static/uploads/images/1.png" class="logo" />
+        <a href="../template/home.html" id="menutxt">
+                <h3>SIMPLICITY</h3>
+        </a>
+    </div>
+    <div class="header-title-div">
+        <h1 class="title-header">Your Cart</h1>
+    </div>
+    <div class="header-right-div" style="position: relative;">
+        <i class="fa-solid fa-user user"></i>
+        <div class="cart-wrapper" style="position: relative;">
+            <i id="cartIcon" class="cart fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    </header>
+
+  <hr/>
+
+    <main>
+    <h1>Shopping Cart</h1>
+    <div class="cart-items"></div>
+    <div class="total-section">Total: ₱<span id="total-price">0.00</span></div>
+    <div class="actions">
+        <button class="clear-btn">Clear Cart</button>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+    </main>
+
+    <hr/>
+
+    <footer class="info">
+        <p>Contact us at: SIMPLICITY1@gmail.com</p>
+        <a href="#">About Us</a><br />
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script src="../static/js/modal.js"></script>
+    <script src="../static/js/cart.js"></script>
+</body>
+</html>

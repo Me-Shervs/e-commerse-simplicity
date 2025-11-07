@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplicity</title>
+    <link rel="icon" href="../static/uploads/images/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href="../static/css/frontpage.css">
+    <link rel='stylesheet' href="../static/css/modal.css">
+    <link rel="stylesheet" href="../static/css/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-image-div">
+            <div class="burger" id="burger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <img src="../static/uploads/images/1.png" class="logo">
+        </div>
+
+        <div class="header-title-div">
+            <h1 class="title-header">SIMPLICITY</h1>
+        </div>
+
+        <div class="header-right-div">
+            <i class="fa-solid fa-user user"></i>
+            <div class="cart-wrapper" style="position: relative;">
+            <i id="cartIcon" class="cart fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    
+    </header>
+
+    <hr/>
+    
+    <main>
+
+        <div style="overflow: auto">
+            <div class="menu">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" name="searchInput" placeholder="Search...">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+                <a href="../template/home.html" id="menutxt">Home</a>
+                <a href="" id="menutxt">About</a>
+                <a href="../template/cart.html" id="menutxt">Shop</a>
+
+                <video src="/static/uploads/videos/vid1.mp4" autoplay loop class="side-video-ad"></video>
+
+                <p class="txt">
+                    This year, follow the trends and purchase the items you can't live without. 
+                    Our clothing is made to be attractive, comfy, and trendy so you may look and feel great. Don't wait any longer, add to cart now!<br/>
+                </p>
+            </div>
+        <div class="main-section">
+            <div class="ads-men">
+                <div class="video-div">
+                    <video loop autoplay class="video-ads1">
+                        <source src="/static/uploads/videos/vid-3.mp4" type="video/mp4">
+                    </video>
+                    
+                    <video autoplay loop class="video-ads2">
+                        <source src="/static/uploads/videos/vid2.mp4" type="video/mp4">
+                    </video>
+
+                    <video autoplay loop class="video-ads3">
+                        <source src="/static/uploads/videos/vid-3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+            </div>
+
+            <div class="categories-container">
+                <div class="categories-label">
+                    <h2>Categories</h2>
+                </div>
+                <div class="categories">
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-shirt"></i>
+                        <p>Clothes</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Gadgets</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-headphones"></i>
+                        <p>Gadgets Accessories</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-tv"></i>
+                        <p>Home Entertainment</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-couch"></i>
+                        <p>Home & Living</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <p>Groceries</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <p>Toys & Games</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <p>Bags</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-basketball-ball"></i>
+                        <p>Sports</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <p>Travel</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-gem"></i>
+                        <p>Accessories</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-shoe-prints"></i>
+                        <p>Shoes</p>
+                    </div>
+                    <div onclick="location.href='clothes-section.html'";>
+                        <i class="fa-solid fa-car"></i>
+                        <p>Cars & Motors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="discovery-page">
+                <div class="discovery-title">
+                    <h2>Discover</h2>
+                </div>
+                <div class="product-container">
+                <div 
+                    class = "product"
+                    data-name="Marshmallow T-Shirt"
+                    data-price="350" 
+                    data-image="../static/uploads/images/men_section/1.webp"
+                >
+                    <img src="../static/uploads/images/men_section/1.webp">
+                    
+                    <h2>
+                        Marshmallow T-Shirt
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.7</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P350.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+                
+                <div 
+                    class = "product"
+                    data-name="Sample Women's Clothes"
+                    data-price="850" 
+                    data-image="../static/uploads/images/women_section/n1.jpg"
+                >
+                    <img src="../static/uploads/images/women_section/n1.jpg">
+                    
+                    <h2>
+                        Sample Women's Clothes
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.7</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P850.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Korean Casual Pants"
+                    data-price="500" 
+                    data-image="../static/uploads/images/men_section/10.webp"
+                >
+                    <img src="../static/uploads/images/men_section/10.webp">
+                    <h2>
+                        Korean Casual Pants
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 5.0</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P500.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Skinny Jeans"
+                    data-price="450" 
+                    data-image="../static/uploads/images/men_section/11.webp"
+                >
+                    <img src="../static/uploads/images/men_section/11.webp">
+                    <h2>
+                        Skinny Jeans
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.5</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P450.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Cargo Pants"
+                    data-price="400" 
+                    data-image="../static/uploads/images/men_section/12.webp"
+                >
+                    <img src="../static/uploads/images/men_section/12.webp">
+                    <h2>
+                        Cargo Pants
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.6</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P400.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Cargo Pants 2"
+                    data-price="600" 
+                    data-image="../static/uploads/images/men_section/13.webp"
+                >
+                    <img src="../static/uploads/images/men_section/13.webp">
+                    <h2>
+                        Cargo Pants 2
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.7</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P600.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Jogger Pants"
+                    data-price="700" 
+                    data-image="../static/uploads/images/men_section/14.webp"
+                >
+                    <img src="../static/uploads/images/men_section/14.webp">
+                    <h2>
+                        Jogger Pants
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span> 
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.7</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P700.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Marshmallow T-Shirt"
+                    data-price="350" 
+                    data-image="../static/uploads/images/men_section/2.webp"
+                >
+                    <img src="../static/uploads/images/men_section/2.webp">
+                    <h2>
+                        Marshmallow T-Shirt
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span> 
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.7</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P350.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+
+                <div 
+                    class = "product"
+                    data-name="Vandal T-Shirt"
+                    data-price="300" 
+                    data-image="../static/uploads/images/men_section/3.webp"
+                >
+                    <img src="../static/uploads/images/men_section/3.webp">
+                    <h2>
+                        Vandal T-Shirt
+                    </h2>
+                    <hr>
+                    <div class = "product-rating">
+                        <div class = "stars" data-rating="4.5">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <span class = "average-rating"><u>Average Rating: 4.6</u></span>
+                        
+                    </div>
+                    <hr>
+                    <p>
+                        <b>P300.00</b>
+                    </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button>Buy</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Preview Modal -->
+        <div id="productModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="Product Image">
+                <h2 id="modalName"></h2>
+                <p>₱<span id="modalPrice"></span></p>
+                <div>
+                    <label for="size">Size:</label>
+                    <select id="modalSize">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                    </select>
+                <br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="modalQuantity" min="1" value="1">
+                    <br>
+                </div>
+                <button id="addToCartFromModal">Add to Cart</button>
+            </div>
+        </div>
+
+            <div class="more">
+                <button class="prev-button">
+                    Back
+                </button>
+                <a class="number-page">
+                    <u>1</u>
+                </a>
+                <a class="number-page">
+                    <u>2</u>
+                </a>
+                <a class="number-page">
+                    <u>3</u>
+                </a>
+                <a class="number-page">
+                    <u>4</u>
+                </a>
+                <a class="number-page">
+                    <u>5</u>
+                </a class="number-page">
+                <button class="next-button">
+                    Next
+                </button>
+            </div>
+            <div class="overlay" id="overlay"></div>
+    </main>
+    <hr/>
+    <footer class = "info">
+        <p>Contact us at: SIMPLICITY1@gmail.com</p>
+        <a href>About Us</a><br/>
+        <a href>Privacy Policy</a>
+    </footer>
+<script src="../static/js/modal.js"></script>
+<script src="../static/js/shop.js"></script>
+<script src="../static/js/search.js"></script>
+<script src="../static/js/burger.js"></script>
+</body>
+</html>
