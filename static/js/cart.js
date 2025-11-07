@@ -26,7 +26,13 @@ function renderCart() {
         <img src="${item.image}" alt="${item.name}">
         <div class="item-info">
             <h3>${item.name}</h3>
-            <p>Size: ${item.size}</p>
+            <label>Size:</label>
+            <select class="size-select">
+            <option value="S" ${item.size === "S" ? "selected" : ""}>S</option>
+            <option value="M" ${item.size === "M" ? "selected" : ""}>M</option>
+            <option value="L" ${item.size === "L" ? "selected" : ""}>L</option>
+            <option value="XL" ${item.size === "XL" ? "selected" : ""}>XL</option>
+            </select>
             <p>₱${item.price.toFixed(2)}</p>
         </div>
         <div class="quantity-control">
@@ -36,7 +42,6 @@ function renderCart() {
         </div>
         <button class="remove-btn">Remove</button>
         `;
-
 
     div.querySelector(".increase").addEventListener("click", () => {
         item.quantity++;
@@ -53,6 +58,13 @@ function renderCart() {
         cart.splice(index, 1);
         saveCart();
     });
+
+    // Handle size changes
+    div.querySelector(".size-select").addEventListener("change", (e) => {
+        item.size = e.target.value;
+        saveCart();
+    });
+
 
     cartContainer.appendChild(div);
     });
